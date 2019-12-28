@@ -26,4 +26,9 @@
         android:id="@+id/newFragment"
         android:name="com.example.jetpacknavigationtest.ui.NewFragment"
         android:label="NewFragment" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.jetpacknavigationtest.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
 </navigation>
