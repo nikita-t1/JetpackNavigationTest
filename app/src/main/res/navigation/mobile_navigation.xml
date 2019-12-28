@@ -22,4 +22,8 @@
         android:name="com.example.jetpacknavigationtest.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/newFragment"
+        android:name="com.example.jetpacknavigationtest.ui.NewFragment"
+        android:label="NewFragment" />
 </navigation>

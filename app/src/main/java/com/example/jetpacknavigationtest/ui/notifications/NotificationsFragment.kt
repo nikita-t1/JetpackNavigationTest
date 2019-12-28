@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import com.example.jetpacknavigationtest.R
 
 class NotificationsFragment : Fragment() {
@@ -26,7 +27,7 @@ class NotificationsFragment : Fragment() {
         val textView: TextView = root.findViewById(R.id.text_notifications)
         val btn: Button = root.findViewById(R.id.btn)
         btn.setOnClickListener{
-
+            findNavController().navigate(R.id.newFragment)
         }
         notificationsViewModel.text.observe(this, Observer {
             textView.text = it
